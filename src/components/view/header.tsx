@@ -66,19 +66,21 @@ export const Header = ({}: HeaderProps) => {
           </div>
         </div>
 
-        <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
-          <DrawerTrigger onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
-            Menu
-          </DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader>
-              <MenuMobile onCloseDrawer={handleDrawerClose} />
-            </DrawerHeader>
-            <DrawerFooter>
-              <ModeToggle />
-            </DrawerFooter>
-          </DrawerContent>
-        </Drawer>
+        <div className="lg:hidden">
+          <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+            <DrawerTrigger onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
+              Menu
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <MenuMobile onCloseDrawer={handleDrawerClose} />
+              </DrawerHeader>
+              <DrawerFooter>
+                <ModeToggle />
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        </div>
       </Container>
     </>
   );
