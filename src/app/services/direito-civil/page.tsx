@@ -7,8 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Container } from "@/components/ui/container";
-import { Footer } from "@/components/view/footer";
-import { Header } from "@/components/view/header";
 
 const Civil = () => {
   const services = [
@@ -51,9 +49,8 @@ const Civil = () => {
 
   return (
     <>
-      <Header />
       <Container className="min-h-screen">
-        <h1>Direito Cívil</h1>
+        <h1 className="text-2xl">Direito Cívil</h1>
         <Accordion type="single" collapsible>
           {services.map((service, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
@@ -63,7 +60,6 @@ const Civil = () => {
           ))}
         </Accordion>
       </Container>
-      <Footer />
     </>
   );
 };

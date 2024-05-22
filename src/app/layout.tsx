@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
+import { Layout } from "@/components/layout";
 import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
@@ -59,7 +60,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Layout>{children}</Layout>
         </ThemeProvider>
       </body>
     </html>

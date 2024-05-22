@@ -1,3 +1,5 @@
+"use client";
+
 import { Facebook, Globe, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { Container } from "../ui/container";

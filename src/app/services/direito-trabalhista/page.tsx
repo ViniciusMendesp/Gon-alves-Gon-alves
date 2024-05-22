@@ -7,8 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Container } from "@/components/ui/container";
-import { Footer } from "@/components/view/footer";
-import { Header } from "@/components/view/header";
 
 const Labourite = () => {
   const services = [
@@ -36,7 +34,6 @@ const Labourite = () => {
 
   return (
     <>
-      <Header />
       <Container className="min-h-screen">
         <h1>Direito Cívil</h1>
         <Accordion type="single" collapsible>
@@ -48,7 +45,6 @@ const Labourite = () => {
           ))}
         </Accordion>
       </Container>
-      <Footer />
     </>
   );
 };

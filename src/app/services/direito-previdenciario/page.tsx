@@ -7,8 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Container } from "@/components/ui/container";
-import { Footer } from "@/components/view/footer";
-import { Header } from "@/components/view/header";
 
 const Persion = () => {
   const services = [
@@ -66,7 +64,6 @@ const Persion = () => {
 
   return (
     <>
-      <Header />
       <Container className="min-h-screen">
         <h1>Direito Cívil</h1>
         <Accordion type="single" collapsible>
@@ -78,7 +75,6 @@ const Persion = () => {
           ))}
         </Accordion>
       </Container>
-      <Footer />
     </>
   );
 };

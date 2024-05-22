@@ -1,3 +1,5 @@
+"use client";
+
 import {
   NavigationMenu,
   NavigationMenuLink,
@@ -39,22 +41,22 @@ export const Header = ({}: HeaderProps) => {
           <div className="flex gap-5">
             <NavigationMenu>
               <NavigationMenuList className="flex gap-5">
-                <Link href="#sobre" legacyBehavior passHref>
+                <Link href="/#sobre" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Sobre nós
                   </NavigationMenuLink>
                 </Link>
-                <Link href="#area" legacyBehavior passHref>
+                <Link href="/#area" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Áreas de atuação
                   </NavigationMenuLink>
                 </Link>
-                <Link href="#contato" legacyBehavior passHref>
+                <Link href="/#contato" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Formulário
                   </NavigationMenuLink>
                 </Link>
-                <Link href="#contato" legacyBehavior passHref>
+                <Link href="/#contato" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     Contato
                   </NavigationMenuLink>
