@@ -16,7 +16,7 @@ export const CardServices = ({
   url,
 }: CardServicesProps) => {
   return (
-    <div className="w-full lg:w-[320px] border border-muted shadow-md shadow-secondary flex flex-col justify-between">
+    <div className="w-full lg:w-[320px] border border-muted shadow-sm shadow-secondary flex flex-col justify-between">
       <div className="flex items-center justify-center p-5">{icon}</div>
       <div className="p-5 flex flex-col gap-2">
         <h2 className="text-xl font-bold text-primary text-center">{title}</h2>
