@@ -28,7 +28,7 @@ export const Form = ({ className }: ContactProps) => {
   };
 
   const handleShareByEmail = () => {
-    const recipientEmail = "willian.sgoncalves@uol.com.br";
+    const recipientEmail = "goncalvesegoncalves.advconjur@gmail.com";
     const subject = encodeURIComponent(
       "Caso Jurídico - Formulário do Site - G&G"
     );

@@ -6,36 +6,47 @@ interface AboutProps {
 
 export const About = ({ className }: AboutProps) => {
   return (
-    <Container className={`flex flex-col gap-5 py-5 ${className}`}>
-      <h1 id="sobre" className="text-2xl font-bold">
-        Sobre nós
-      </h1>
-      <p className="text-base leading-8">
-        Bem-vindo ao Escritório de Advocacia Gonçalves & Gonçalves, localizado
-        na vibrante cidade de Suzano. Somos um escritório fundado com paixão e
-        comprometimento pelos advogados e irmãos Juliana de Sousa Gonçalves e
-        Willian de Sousa Gonçalves em 11 de agosto de 2020. Com uma sólida base
-        de conhecimento e experiência, estamos aqui para atender às suas
-        necessidades legais com excelência. Nossa abordagem é centrada no
-        cliente, e cada pessoa que entra em nosso escritório é tratada com
-        respeito e atenção individualizada. Entendemos que cada caso é único, e
-        é por isso que nos dedicamos a ouvir atentamente sua situação antes de
-        fornecer orientação jurídica especializada. Seja para um simples
-        aconselhamento ou para representação legal perante os tribunais, estamos
-        aqui para ajudar. Compreendemos que lidar com questões jurídicas pode
-        ser complexo e desafiador. É por isso que estamos empenhados em fornecer
-        um atendimento personalizado, para que você se sinta confortável e
-        confiante em cada etapa do processo. Nossa equipe está preparada para
-        lidar com uma ampla gama de questões legais, desde cobranças abusivas
-        até processos de separação, e estamos aqui para ajudá-lo a encontrar as
-        melhores soluções. Se você tem dúvidas jurídicas ou está enfrentando um
-        problema legal, não hesite em entrar em contato conosco. Estamos aqui
-        para oferecer orientação e esclarecer suas dúvidas, para que você possa
-        tomar decisões informadas sobre o seu futuro. Entre em contato conosco
-        hoje mesmo para agendar uma consulta, seja pelo formulário abaixo ou
-        através do WhatsApp. Estamos ansiosos para ajudá-lo a resolver seus
-        problemas legais e alcançar a justiça que você merece.
-      </p>
+    <Container
+      className={`flex flex-col items-center gap-20 py-5 ${className}`}
+    >
+      <div className="flex flex-col gap-4">
+        <h1 className="text-4xl font-bold text-center">
+          Gonçalves & Gonçalves
+        </h1>
+        <p className="text-center">Advocacia e Consultoria Jurídica</p>
+      </div>
+
+      <div className="text-center flex flex-col gap-5 lg:w-[900px]">
+        <h1 id="sobre" className="text-2xl font-bold">
+          Sobre nós
+        </h1>
+        <p className="text-base leading-8">
+          Sobre Nós Bem-vindo ao Escritório de Advocacia Gonçalves & Gonçalves,
+          localizado em Suzano. Fundado em 11 de agosto de 2020 pelos advogados
+          e irmãos Juliana de Sousa Gonçalves e Willian de Sousa Gonçalves,
+          nosso escritório é dedicado a atender suas necessidades legais com
+          excelência.
+        </p>
+        <p className="text-base leading-8">
+          Nossa abordagem é centrada no cliente. Cada caso é tratado com
+          respeito e atenção individualizada, garantindo orientação jurídica
+          especializada para sua situação específica. Estamos preparados para
+          lidar com uma ampla gama de questões legais, desde cobranças abusivas
+          até processos de separação.
+        </p>
+        <p>
+          Entendemos que questões jurídicas podem ser complexas e desafiadoras.
+          Por isso, oferecemos um atendimento personalizado, para que você se
+          sinta confortável e confiante em cada etapa do processo. Se você tem
+          dúvidas jurídicas ou enfrenta um problema legal, não hesite em nos
+          contatar. Estamos aqui para oferecer a orientação necessária e
+          ajudá-lo a tomar decisões informadas sobre o seu futuro.
+        </p>
+        <p className="text-base leading-8">
+          Agende uma consulta conosco pelo formulário abaixo ou pelo WhatsApp.
+          Estamos ansiosos para ajudá-lo a alcançar a justiça que você merece.
+        </p>
+      </div>
     </Container>
   );
 };

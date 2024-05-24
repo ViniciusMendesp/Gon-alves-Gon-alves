@@ -20,7 +20,9 @@ export const Footer = ({ className }: FooterProps) => {
   };
 
   return (
-    <Container className={`bg-secondary flex flex-col gap-6 ${className}`}>
+    <Container
+      className={`bg-secondary shadow-lg shadow-secondary-foreground flex flex-col gap-6 ${className}`}
+    >
       <h1 id="contato" className="text-2xl font-bold">
         Contato
       </h1>
@@ -46,10 +48,10 @@ export const Footer = ({ className }: FooterProps) => {
           <div className="flex items-center gap-2">
             <Mail className="w-5 h-5" />
             <Link
-              href={"mailto:willian.sgoncalves@uol.com.br"}
+              href={"mailto:goncalvesegoncalves.advconjur@gmail.com"}
               className="text-sm"
             >
-              willian.sgoncalves@uol.com.br
+              goncalvesegoncalves.advconjur@gmail.com
             </Link>
           </div>
           <div className="flex items-center gap-2">
