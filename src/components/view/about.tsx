@@ -1,30 +1,17 @@
 import { Container } from "../ui/container";
 
-interface AboutProps {
-  className?: string;
-}
-
-export const About = ({ className }: AboutProps) => {
+export const About = () => {
   return (
-    <Container
-      className={`flex flex-col items-center gap-20 py-5 ${className}`}
-    >
-      <div className="flex flex-col gap-4">
-        <h1 className="text-4xl font-bold text-center">
-          Gonçalves & Gonçalves
-        </h1>
-        <p className="text-center">Advocacia e Consultoria Jurídica</p>
-      </div>
-
-      <div className="text-center flex flex-col gap-5 lg:w-[900px]">
+    <Container className="flex justify-center bg-secondary">
+      <div className="text-center justify-center flex flex-col gap-5 lg:w-[900px]">
         <h1 id="sobre" className="text-2xl font-bold">
           Sobre nós
         </h1>
         <p className="text-base leading-8">
-          Sobre Nós Bem-vindo ao Escritório de Advocacia Gonçalves & Gonçalves,
-          localizado em Suzano. Fundado em 11 de agosto de 2020 pelos advogados
-          e irmãos Juliana de Sousa Gonçalves e Willian de Sousa Gonçalves,
-          nosso escritório é dedicado a atender suas necessidades legais com
+          Bem-vindo ao Escritório de Advocacia Gonçalves & Gonçalves, localizado
+          em Suzano. Fundado em 11 de agosto de 2020 pelos advogados e irmãos
+          Juliana de Sousa Gonçalves e Willian de Sousa Gonçalves, nosso
+          escritório é dedicado a atender suas necessidades legais com
           excelência.
         </p>
         <p className="text-base leading-8">

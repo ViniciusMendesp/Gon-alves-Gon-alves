@@ -52,7 +52,7 @@ export const Form = ({ className }: ContactProps) => {
     formData.message !== "";
 
   return (
-    <Container className={`flex flex-col gap-5 ${className}`}>
+    <Container className={`flex flex-col gap-5 bg-background ${className}`}>
       <h1 id="form" className="text-2xl font-bold md:text-center">
         Ficha Cadastral pré-consulta
       </h1>
@@ -114,7 +114,7 @@ export const Form = ({ className }: ContactProps) => {
         </Button>
       </form>
       <p className="text-muted-foreground text-center text-xs ">
-        Um email será enviado para o proprietário.
+        Um email será enviado para o advogado.
       </p>
     </Container>
   );

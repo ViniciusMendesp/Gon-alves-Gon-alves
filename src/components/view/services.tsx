@@ -18,37 +18,35 @@ export const Services = ({ className }: ServicesProps) => {
       icon: <SquareUser className="w-12 h-12" />,
       title: "Direito Civil",
       description:
-        "Consultoria e representação em contratos, responsabilidade civil, família e sucessões. Protegemos seus direitos civis com eficácia.",
-      url: "/services/direito-civil",
+        "Oferecemos serviços relacionados a contratos, divórcios, inventários, reconhecimento de união estável, guarda, alimentos, danos morais e materiais, entre outras soluções cíveis.",
     },
     {
       key: 2,
       icon: <BriefcaseBusiness className="w-12 h-12" />,
       title: "Direito Trabalhista",
       description:
-        "Assessoria em reclamações trabalhistas, acordos e negociações sindicais. Defendemos seus direitos no ambiente de trabalho.",
-      url: "/services/direito-trabalhista",
+        "Nosso expertise inclui reclamação trabalhista, abrangendo verbas rescisórias, férias, FGTS, entre outras áreas relacionadas.",
     },
     {
       key: 3,
       icon: <Siren className="w-12 h-12" />,
       title: "Direito Criminal",
       description:
-        " Defesa em processos criminais, acompanhamento de inquéritos e assessoria penal. Garantimos a sua defesa em todas as etapas.",
-      url: "/services/direito-criminal",
+        "Atuamos na defesa em 1ª e 2ª instância, habeas corpus, representação, e em outros serviços relacionados ao direito penal.",
     },
     {
       key: 4,
       icon: <Accessibility className="w-12 h-12" />,
       title: "Direito Previdenciário",
       description:
-        "Orientação em concessão de benefícios e revisão de aposentadorias. Ajudamos você a garantir seus direitos previdenciários.",
-      url: "/services/direito-previdenciario",
+        "Especializados em aposentadoria por tempo de contribuição, aposentadoria por idade, aposentadoria por invalidez, aposentadoria especial, auxílio-doença, BPC (Benefício de Prestação Continuada), LOAS (Lei Orgânica da Assistência Social), salário-maternidade, pensão por morte, auxílio-reclusão, entre outros benefícios previdenciários.",
     },
   ];
 
   return (
-    <Container className={`flex flex-col items-center gap-5 ${className}`}>
+    <Container
+      className={`flex flex-col bg-secondary shadow-2xl shadow-black items-center gap-5 ${className}`}
+    >
       <h1 id="area" className="text-2xl font-bold mb-4">
         Áreas de atuação
       </h1>
@@ -59,7 +57,6 @@ export const Services = ({ className }: ServicesProps) => {
             icon={service.icon}
             title={service.title}
             description={service.description}
-            url={service.url}
           />
         ))}
       </div>
