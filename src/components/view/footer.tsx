@@ -21,7 +21,7 @@ export const Footer = ({ className }: FooterProps) => {
 
   return (
     <Container
-      className={`bg-secondary shadow-lg shadow-secondary-foreground flex flex-col gap-6 ${className}`}
+      className={`bg-popover p-6 shadow-lg shadow-secondary-foreground flex flex-col gap-6 ${className}`}
     >
       <h1 id="contato" className="text-2xl font-bold">
         Contato

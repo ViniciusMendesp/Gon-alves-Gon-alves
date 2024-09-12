@@ -57,7 +57,7 @@ export const Form = ({ className }: ContactProps) => {
         Ficha Cadastral pré-consulta
       </h1>
       <form className="items-center flex flex-col">
-        <div className="mb-4 md:w-[600px] w-full">
+        <div className="mb-4 md:w-[600px] w-full flex flex-col gap-2">
           <Label htmlFor="name">Nome</Label>
           <Input
             id="name"
@@ -69,7 +69,7 @@ export const Form = ({ className }: ContactProps) => {
             required
           />
         </div>
-        <div className="mb-4 md:w-[600px] w-full">
+        <div className="mb-4 md:w-[600px] w-full flex flex-col gap-2">
           <Label htmlFor="email">Email</Label>
           <Input
             id="email"
@@ -81,7 +81,7 @@ export const Form = ({ className }: ContactProps) => {
             required
           />
         </div>
-        <div className="mb-4 md:w-[600px] w-full">
+        <div className="mb-4 md:w-[600px] w-full flex flex-col gap-2">
           <Label htmlFor="phone">Telefone</Label>
           <Input
             id="phone"
@@ -93,7 +93,7 @@ export const Form = ({ className }: ContactProps) => {
             required
           />
         </div>
-        <div className="mb-4 md:w-[600px] w-full">
+        <div className="mb-4 md:w-[600px] w-full flex flex-col gap-2">
           <Label htmlFor="message">Mensagem</Label>
           <Textarea
             id="message"

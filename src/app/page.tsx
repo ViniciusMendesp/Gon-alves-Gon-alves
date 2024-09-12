@@ -1,6 +1,5 @@
 "use client";
 
-import { Separator } from "@/components/ui/separator";
 import { About } from "@/components/view/about";
 import { Banner } from "@/components/view/banner";
 import { Form } from "@/components/view/form";
@@ -9,16 +8,12 @@ import { Services } from "@/components/view/services";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-between ">
+    <main className="flex flex-col md:gap-60 gap-20">
       <Banner />
       <Services />
-      <Separator />
       <About />
-      <Separator />
       <Form />
-      <Separator />
       <Map />
-      <Separator />
     </main>
   );
 }

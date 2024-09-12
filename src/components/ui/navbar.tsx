@@ -11,19 +11,23 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="relative">
+    <nav className="relative bg-background">
       {isOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-50"
+          className="fixed top-0 left-0 w-full h-full bg-foreground opacity-50 z-50 "
           onClick={toggleMenu}
         />
       )}
       <div className="">
-        <div className="flex items-center justify-center h-16">
+        <div className="flex items-center justify-between h-16">
+          <h1 className="text-primary font-bold text-2xl hidden md:block">
+            Gonçalves & Gonçalves
+          </h1>
+
           <div className="hidden md:block">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 ">
               <Button variant="link">
-                <Link href="/#areas" className="font-bold text-base">
+                <Link href="/#areas" className="font-bold text-base ">
                   Áreas de atuação
                 </Link>
               </Button>

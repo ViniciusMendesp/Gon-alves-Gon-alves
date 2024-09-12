@@ -45,7 +45,7 @@ export const Services = ({ className }: ServicesProps) => {
 
   return (
     <Container
-      className={`flex flex-col bg-secondary shadow-2xl shadow-black items-center gap-5 ${className}`}
+      className={`flex flex-col bg-background items-center gap-5 ${className}`}
     >
       <h1 id="area" className="text-2xl font-bold mb-4">
         Áreas de atuação

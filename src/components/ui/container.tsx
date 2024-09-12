@@ -6,9 +6,5 @@ interface ContainerProps {
 }
 
 export const Container = ({ children, className }: ContainerProps) => {
-  return (
-    <div className={`px-4 py-4 lg:px-64 lg:py-6 ${className || ""}`}>
-      {children}
-    </div>
-  );
+  return <div className={`px-4 lg:px-64  ${className || ""}`}>{children}</div>;
 };

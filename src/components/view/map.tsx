@@ -2,7 +2,7 @@ import { Container } from "../ui/container";
 
 export const Map = () => {
   return (
-    <Container className="bg-background flex flex-col gap-4 items-center justify-center">
+    <Container className="flex flex-col gap-4 items-center justify-center md:mb-60 mb-20">
       <h1 id="map" className="text-2xl font-bold">
         Nosso endereço
       </h1>
@@ -11,7 +11,7 @@ export const Map = () => {
         allowFullScreen={true}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="w-full h-96 lg:w-[600px] border rounded-xl shadow-md"
+        className="w-full h-96 lg:w-[600px] border rounded-md border-border"
       ></iframe>
     </Container>
   );

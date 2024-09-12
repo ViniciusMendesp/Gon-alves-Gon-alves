@@ -2,7 +2,7 @@ import { Container } from "../ui/container";
 
 export const About = () => {
   return (
-    <Container className="flex justify-center bg-secondary">
+    <Container className="flex justify-center bg-background">
       <div className="text-center justify-center flex flex-col gap-5 lg:w-[900px]">
         <h1 id="sobre" className="text-2xl font-bold">
           Sobre nós

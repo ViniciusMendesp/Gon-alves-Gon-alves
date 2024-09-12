@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Lora as FontSans } from "next/font/google";
 import "./globals.css";
 
 import { Layout } from "@/components/layout";
@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 
 const fontSans = FontSans({
   subsets: ["latin"],
+  style: "normal",
+  weight: "400",
   variable: "--font-sans",
 });
 
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     phoneNumbers: ["55 11 94854-0659"],
     description:
-      "Bem-vindo ao Escritório de Advocacia Gonçalves & Gonçalves, localizado em Suzano. Fundado em 11 de agosto de 2020 pelos advogados e irmãos Juliana de Sousa Gonçalves e Willian de Sousa Gonçalves, nosso escritório é dedicado a atender suas necessidades legais com excelência.",
+      "Escritório de Advocacia Gonçalves & Gonçalves: Atuando em direito civil, penal, empresarial e muito mais, com atendimento especializado em Suzano.",
     title: "Gonçalves e Gonçalves Advocacia",
     url: "https://goncalves-e-goncalves-advogados.vercel.app/",
     creators: ["Willian de Souza Gonçalves", "Juliana de Sousa Gonçalves"],
@@ -26,6 +28,14 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     siteName: "Gonçalves e Gonçalves Advocacia",
     tags: ["Advogado", "Advocacia", "Consultoria Jurídica"],
+    images: [
+      {
+        url: "./public/ogimage.png",
+        width: 1200,
+        height: 630,
+        alt: "Gonçalves e Gonçalves Advocacia",
+      },
+    ],
   },
   keywords: [
     "Gonçalves e Gonçalves Advocacia e Consultoria Jurídica",
@@ -63,10 +73,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body
         className={cn(
-          "font-sans antialiased min-h-screen bg-cover bg-center bg-no-repeat bg-fixed",
+          "font-sans antialiased min-h-screen bg-background",
           fontSans.variable
         )}
-        style={{ backgroundImage: "url('/background-home.jpg" }}
       >
         <ThemeProvider
           attribute="class"

@@ -15,14 +15,15 @@ export const CardServices = ({
 }: CardServicesProps) => {
   const [expanded, setExpanded] = useState(false);
 
-  // Limitar a quantidade de caracteres exibidos na descrição
   const limitedDescription = expanded
     ? description
     : description.slice(0, 150) + (description.length > 150 ? "..." : "");
 
   return (
-    <div className="w-full lg:w-[320px] bg-background border border-muted shadow-lg flex flex-col">
-      <div className="flex items-center justify-center p-5">{icon}</div>
+    <div className="w-full lg:w-[320px] bg-card border border-border rounded-lg shadow-lg flex flex-col ">
+      <div className="flex items-center justify-center p-5 text-primary">
+        {icon}
+      </div>
       <div className="p-5 flex flex-col gap-2">
         <h2 className="text-xl font-bold text-primary text-center">{title}</h2>
         <p className="text-base text-muted-foreground text-center">
