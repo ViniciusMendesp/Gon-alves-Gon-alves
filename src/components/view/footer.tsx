@@ -1,8 +1,9 @@
 "use client";
 
+import { Container } from "../ui/container";
 import { Facebook, Globe, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
-import { Container } from "../ui/container";
+import { Button } from "../ui/button";
 
 interface FooterProps {
   className?: string;
@@ -21,12 +22,12 @@ export const Footer = ({ className }: FooterProps) => {
 
   return (
     <Container
-      className={`bg-popover p-6 shadow-lg shadow-secondary-foreground flex flex-col gap-6 ${className}`}
+      className={`bg-popover p-6 shadow-lg shadow-secondary-foreground flex flex-col  gap-6 ${className}`}
     >
-      <h1 id="contato" className="text-2xl font-bold">
-        Contato
-      </h1>
-      <div className="flex flex-col gap-6 md:flex-row md:justify-between">
+      <div className="flex flex-col gap-6  md:justify-between">
+        <h1 id="contato" className="text-2xl font-bold">
+          Contato
+        </h1>
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5" />
@@ -64,18 +65,26 @@ export const Footer = ({ className }: FooterProps) => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold">Redes sociais</h2>
-          <div className="flex gap-4">
+      </div>
+
+      <div className="flex flex-col items-start gap-4">
+        <h2 className="text-2xl font-bold">Redes sociais</h2>
+        <div className="flex flex-col  gap-4">
+          <Button variant="link" className="flex text-foreground  gap-2">
+            <Instagram className="w-5 h-5" />
             <Link href={"https://www.instagram.com/dr.williansg"}>
-              <Instagram className="w-8 h-8" />
+              Instagram
             </Link>
+          </Button>
+
+          <Button variant="link" className="flex text-foreground gap-2">
+            <Facebook className="w-5 h-5" />
             <Link
               href={"https://web.facebook.com/goncalvesegoncalvesadvocacia"}
             >
-              <Facebook className="w-8 h-8" />
+              Facebook
             </Link>
-          </div>
+          </Button>
         </div>
       </div>
       <div className="text-center">
